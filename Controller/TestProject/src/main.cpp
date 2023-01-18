@@ -2,9 +2,12 @@
 #include <Arduino.h>
 
 void setup() {
-  
+  Serial.println("Hello world");
 }
 
 void loop() {
-  Serial.println(Sum(2, 5));
+  int i = 0;
+  Serial.println(Sum(i + 1, i + 2));
+  i++;
+  delay(1000);
 }
