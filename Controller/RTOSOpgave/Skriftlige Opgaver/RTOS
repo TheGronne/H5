@@ -1,0 +1,26 @@
+Find og list hvilke RTOS du kan finde:
+Monolithic og Microkernel. Firm, Soft, og Hard RTOS.
+
+Hvilke hardware platforme kører de typisk på?
+Arduino
+Windows
+Linux
+Apple iOS
+
+Typiske applicationer?
+Airlines reservation system
+Air traffic control system
+Anti-lock brake systems
+Heart pacemaker
+Self-driven vehicles
+
+Hvilke (RTOS) findes til Arduino platformen?
+FreeRTOS
+FunkOS
+OSA
+Salvo
+Femtoos
+AvrX
+
+Hvad er en MMU?
+Memory Management Unit. En oversætter af en art fra virtuel memory til fysiske addresser.
