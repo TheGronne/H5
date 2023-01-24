@@ -1,0 +1,11 @@
+Ethernet
+
+Read temperature and humidity
+
+Turn on different LEDs depending on temperature:
+Hotness:
+Hot: Red, Cold: Yellow
+
+If temperature is what we want, LED will turn green, and on the website it will say that currently everything's good.
+
+Display hotness on the webs. The SVG will also change colour depending on temperature.
