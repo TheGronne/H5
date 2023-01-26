@@ -1,0 +1,24 @@
+Programmet består af 2 dele.
+
+Del 1: Arduino, med ethernet server på 192.168.1.18
+Del 2: Klienten/brugeren, som går in på 192.168.1.18
+
+Hver gang en bruger tilgår 192.168.1.18, som Arduinoen lytter på  et loop, sender vi raw text til klienten, som browseren automatisk interpretator som HTML.
+
+I HTML'en har vi sat en refresh på 5 sekunder. Dette er for at kunne opdatere siden hvert 5. sekund.
+Vi opdaterer siden grundet at vi på serveren kun lytter på en request, og hvert gang en bruger går ind på 192.168.1.18, tager vi imod den request og sender data tilbage.
+
+(Side note: Dette "refresh hvert 5. sekund" var noget som jeg har brugt før, da jeg skulle lave en online room booking til skærme som kun kørte windows CE. Disse skærme kørte en browser så gammel at den ikke kunne køre JavaScript så vi kørte siden 100% serverside og sendte raw HTML.)
+
+
+Når serveren får en request, går den ind og tjekker temperaturen via pin A0, som tjekker signalet mellem temperatur sensoren og en resistored 5V.
+Vi bruger derefter denne temperatur, konverterer den til Celsius.
+Med temperaturen i Celsius, kan vi kigge på om den er lavere end 39 grader. hvis den er, så er der for koldt. Hvis den er over 44 grader, er der for varmt. Ellers, er der helt tilpas.
+
+Efter vi har registreret om der er for varmt, koldt eller tilpas, kører vi noget simpelt kode som sender signaler til arduinoens tilpassende lamper.
+Rød: Varmt
+Gul: Koldt
+Grøn: Tilpas/perfekt
+
+Vi ændrer derefter også farven på SVG'en på hjemmesiden, sender forskelligt tekst til klienten, anpå hvad temperaturen er.
+

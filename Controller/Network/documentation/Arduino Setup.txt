@@ -1,0 +1,5 @@
+Lyseblå ledninger: GND
+Pinke ledninger: Pin outputs
+Røde ledninger: 5V
+Mørkeblå ledninger: Pin inputs
+Slide Switch: LM335 Temperatur måler substitute.

@@ -1,11 +1,16 @@
-Ethernet
+Først, skal du tilslutte ethernet kablet og USB til din pc.
+Derefter, uploader du programmer i src/main.cpp til arduinoen.
 
-Read temperature and humidity
+Programmet starter derefter sin egen server, på 192.168.1.18.
+Du kan ping denne server i CMD eller du kan på ind på 192.168.1.18 på internettet.
 
-Turn on different LEDs depending on temperature:
-Hotness:
-Hot: Red, Cold: Yellow
+På hjemmesiden vil du kunne se temperaturen i rummet, samt status på temperaturen er for varm, for koldt, eller perfekt.
 
-If temperature is what we want, LED will turn green, and on the website it will say that currently everything's good.
+Lamperne på arduinoen lyser, matchende status:
+Rød lampe lyser: Der er for varmt (Scorching hot)
+Gul lampe lyser: Der er for koldt (Absolute zero)
+Grøn lampe lyser: Der er perfekt temperatur i rummet (Perfect)
 
-Display hotness on the webs. The SVG will also change colour depending on temperature.
+Du vil også kunne se billedet "I love Arduino" skifter farve magen til lampernes lys.
+
+Hjemmesiden refresher hvert 5. sekund. Dvs. temperaturen bliver opdateret hvert 5. sekund. Vil du opdatere temperaturen kan du refresh hjemmesiden.

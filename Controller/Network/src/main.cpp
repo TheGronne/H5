@@ -29,19 +29,11 @@ byte mac[] = {
 IPAddress ip(192, 168, 1, 18);
 
 // Initialize the Ethernet server library
-// with the IP address and port you want to use
-// (port 80 is default for HTTP):
+// with the IP address and port you want to use.
+// Port 80 is default for HTTP.
 EthernetServer server(80);
 
 void setup() {
-  // You can use Ethernet.init(pin) to configure the CS pin
-  //Ethernet.init(10);  // Most Arduino shields
-  //Ethernet.init(5);   // MKR ETH Shield
-  //Ethernet.init(0);   // Teensy 2.0
-  //Ethernet.init(20);  // Teensy++ 2.0
-  //Ethernet.init(15);  // ESP8266 with Adafruit FeatherWing Ethernet
-  //Ethernet.init(33);  // ESP32 with Adafruit FeatherWing Ethernet
-
   // Open serial communications and wait for port to open:
   Serial.begin(9600);
   while (!Serial) {
@@ -86,21 +78,22 @@ void loop() {
         // so you can send a reply
         if (c == '\n' && currentLineIsBlank) {
           
+          //Resets lights on arduino
           digitalWrite(A5, LOW);
           digitalWrite(A4, LOW);
           digitalWrite(A2, LOW);
+
           // send a standard HTTP response header
           CreateHTMLHeader(client);
-          
 
-          /* Local Variables */
+          // Local Variables
           float LM335_Temp = 0.0f;
-
           uint16_t temp = analogRead(A0);
-          /* Convert the raw ADC value to Temperature in Kelvin */
+
+          // Convert the raw ADC value to Temperature in Kelvin
           LM335_Temp = ((float)( temp * 5 ) / 1023) * 100;
 		
-          /* Convert the Temperature in Kelvin to Celsius */
+          // Convert the Temperature in Kelvin to Celsius
           LM335_Temp = LM335_Temp - 273.15;
           
           // Decide LED and flavour text by checking calculated temperature in Celsius
@@ -149,15 +142,16 @@ void loop() {
 }
 
 
-
+//Creates an easy to edit SVG. Kan be given any client.
 void CreateSVGAndStatus(EthernetClient client, String colour, String status){
   client.println("<svg height=\"60\" width=\"200\">");
-  client.println("<text x=\"0\" y=\"15\" fill=\"" + colour + "\" transform=\"rotate(30 20,40)\">I love SVG</text>");
+  client.println("<text x=\"0\" y=\"15\" fill=\"" + colour + "\" transform=\"rotate(30 20,40)\">I love Arduino</text>");
   client.println("</svg>");
   client.println("<br/>");
   client.println("<h2>Status: " + status + "</h2>");
 }
 
+// Creates HTML header for our website.
 void CreateHTMLHeader(EthernetClient client){
   client.println("HTTP/1.1 200 OK");
   client.println("Content-Type: text/html");
