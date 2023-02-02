@@ -69,7 +69,12 @@ class _MyHomePageState extends State<MyHomePage> {
         groupValue: groupvalue,
         onChanged: (value) {
           setState(() {
-            groupvalue = value.toString();
+            if (selectedGender == v.toString()) {
+              //Doesn't work
+              selectedGender = value.toString();
+            } else {
+              selectedColour = value.toString();
+            }
           });
         },
       ));
