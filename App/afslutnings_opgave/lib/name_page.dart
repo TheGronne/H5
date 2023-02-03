@@ -10,9 +10,13 @@ class NamePage extends StatefulWidget {
   State<NamePage> createState() => _NamePageState();
 }
 
-enum Choices { Mother, Father, Cat, Dog, Lizard }
+enum Choices { Mother, Father, Cat, Dog }
 
 class UserChoice {
+  UserChoice(String? _chosen, String? _name) {
+    chosen = _chosen;
+    name = _name;
+  }
   String? chosen = "";
   String? name = "";
 }
@@ -76,10 +80,7 @@ class _NamePageState extends State<NamePage> {
 
   @override
   void awaitReturnValueFromPageOne(BuildContext context) async {
-    UserChoice userChoice = UserChoice();
-    userChoice.chosen = chosen;
-    userChoice.name = textFieldController.text;
-    Navigator.pop(context, userChoice);
+    Navigator.pop(context, UserChoice(chosen, textFieldController.text));
   }
 
   List<RadioListTile> listToRadio<T>(List<T> values) {

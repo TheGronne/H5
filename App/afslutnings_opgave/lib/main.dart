@@ -32,32 +32,38 @@ class _PageOneState extends State<PageOne> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-                child: Text(
-              nameMessage,
-              style: TextStyle(
-                  color: Color.fromARGB(100, 100, 100, 100), fontSize: 20),
-            )),
-            Container(
-                child: ElevatedButton(
-                    onPressed: () {
-                      awaitReturnValueFromNamePage(context);
-                    },
-                    child: Text('Get Ones Name'))),
-            Container(
-                child: Text(
-              choiceMessage,
-              style: TextStyle(
-                  color: Color.fromARGB(100, 100, 100, 100),
-                  fontSize: 20,
-                  backgroundColor: chosenColour),
-            )),
-            Container(
-                child: ElevatedButton(
-                    onPressed: () {
-                      awaitReturnValueFromColourPage(context);
-                    },
-                    child: Text('Get Ones Colour'))),
+            Column(children: [
+              Container(
+                  child: Text(
+                nameMessage,
+                style: TextStyle(
+                    color: Color.fromARGB(100, 100, 100, 100), fontSize: 20),
+              )),
+              Container(
+                  child: ElevatedButton(
+                      onPressed: () {
+                        awaitReturnValueFromNamePage(context);
+                      },
+                      child: Text('Get Ones Name'))),
+            ]),
+            Column(
+              children: [
+                Container(
+                    child: Text(
+                  choiceMessage,
+                  style: TextStyle(
+                      color: Color.fromARGB(100, 100, 100, 100),
+                      fontSize: 20,
+                      backgroundColor: chosenColour),
+                )),
+                Container(
+                    child: ElevatedButton(
+                        onPressed: () {
+                          awaitReturnValueFromColourPage(context);
+                        },
+                        child: Text('Get Ones Colour'))),
+              ],
+            )
           ],
         )));
   }
@@ -66,7 +72,6 @@ class _PageOneState extends State<PageOne> {
   void awaitReturnValueFromNamePage(BuildContext context) async {
     var result = await Navigator.push(
         context, MaterialPageRoute(builder: (context) => NamePage()));
-    print(result);
     setState(() {
       if (result.chosen != "" && result.name != "") {
         chosenRelation = result.chosen;

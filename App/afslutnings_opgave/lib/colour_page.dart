@@ -61,9 +61,10 @@ class _ColourPageState extends State<ColourPage> {
                   height: 60,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
+                    Text("Alpha:"),
                     DropdownButton<String>(
                         value: alpha,
                         items:
@@ -77,6 +78,7 @@ class _ColourPageState extends State<ColourPage> {
                             chosenColour = hexToColor(alpha, red, green, blue);
                           });
                         }),
+                    Text("Red:"),
                     DropdownButton<String>(
                         value: red,
                         items:
@@ -90,6 +92,7 @@ class _ColourPageState extends State<ColourPage> {
                             chosenColour = hexToColor(alpha, red, green, blue);
                           });
                         }),
+                    Text("Green:"),
                     DropdownButton<String>(
                         value: green,
                         items:
@@ -103,6 +106,7 @@ class _ColourPageState extends State<ColourPage> {
                             chosenColour = hexToColor(alpha, red, green, blue);
                           });
                         }),
+                    Text("Blue:"),
                     DropdownButton<String>(
                         value: blue,
                         items:
