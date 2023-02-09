@@ -1,39 +1,221 @@
 Principles:
 
 - Continued Business Justification
-
 A PRINCE2 project must have a justifiable reason to start it.
-
 A PRINCE2 project should keep its justification throughout the entire lifespan of the project. Although the justification may change, it's important to continue analyzing the benefits of working on the project.
-
 A PRINCE2 project's justification should always be documented and approved by associates.
 
 - Learn from experience
-
 When starting a project, reviewing previous or similar projects can teach lessons which result in great benefit.
-
 During the project, continue using what's been learned to the project's future. You might have run into a problem early on, which surfaced information that could be used in the future.
-
 As the project closes, document and continue using lessons learned. If every project is used as a lesson, every future project will improve.
 
-- Defined roles and responsabilities
-
+- Defined roles and responsibilities
 The organization responsible for the project must have defined and agreed roles and responsibilities within the organization.
 The structure should reflect a healthy environment that aligns the business, user, and supplier stakeholder's interests.
 
 - Manage by stages
-
 If senior management have control points at major intervals throughout the project, the project's status should be assessed at all stages of the project, resulting in the project remaining viable and helps aid in decision making regarding proceeding of project.
-
 Breaking the project into stages allows senior management to assess priority, risk and complexity regularly, helping with mapping the project and steering its course in the right direction.
 
-- Manage by exception
 
+
+- Manage by exception
 Senior management don't have much time on their hands. 
 Therefore, establishing baseline requirements for time, cost, quality, risk, scope, and benefit, senior management's time won't be wasted on daily activities, which can be delegated to the project manager.
 
 - Focus on products
+By defining each product's purpose, composition, derivation, format, quality criteria and quality method, the project's product will be defined and will provide the means to determine effort estimates, resource requirements, dependencies, and activity schedules.
+This results in a much smoother assessment of risk and handling of said risks. These risks include acceptance disputes and user dissatisfaction.
 
-By defining each product's prupose, composition, derivation, format, quality criteria and quality method, the project's product will be defined and will provide the means to determine effort estimates, resource requirements, depedencies and activity schedules.
+- Trailer to suit the project environment
+Ensuring the project management method relates to the project’s environment will lead to an overall smoother process. Adjusting things like team members, the amount of oversight and stage planning can go a long way to ensure optimization.
 
-This results in a much smoother assessment of risk and handling
+
+
+
+
+
+
+
+
+
+
+
+
+
+Themes:
+- Business case
+This theme provides knowledge about achievability and whether the project is worthwhile.
+
+- Organization
+Everyone’s roles and responsibilities must be documented and have a clear defined purpose.
+
+- Quality
+Quality of a project is an abstract concept. This is why defining and documenting the expected quality at the beginning of the project is vital to ensure the project’s quality and work stays on track.
+
+- Plans
+Document and define how targets will be achieved. This theme focuses on timescale, cost, quality, benefits, and products.
+
+- Risk
+Identifying, assessing, and controlling uncertain events during a project is vital to ensure the project stays on track, and won’t be halted due to unforeseen events.
+
+- Change
+Handling change requests during a project is vital to ensure the quality and agreement of said changes. The idea isn’t to prevent these changes, but rather agreeing on new changes before they’re executed.
+
+- Progress
+Tracking a project is vital to ensure everything is going smoothly. It allows project managers to control whether their assumed process and progress is going as planned. Sometimes you may even be unaware that a project’s going off the rails without ensuring you’re tracking the progress of the project.
+
+
+Processes:
+- Starting up a project
+Creating a project mandate which answers logistical questions about the project, documents who will carry it out, how to execute it, and the purpose of the project, will lead to greater overview of the project.
+Have a project brief which includes a lesson log and discussion with people.
+Ensure a team is assigned with a brief, resulting in a smooth delivery of information for the process.
+
+- Initiating a project
+A project manager outlines how the following targets will be managed: Cost, Quality, Benefits, Time, Scope, and Risk.
+
+- Directing a project
+From the beginning to the end of the project, the project board manages these activities: Initiation, Stage boundaries, Ad hoc direction and guidance, and Project closure
+
+- Controlling a stage
+Breaking the project down in smaller, manageable activities leads to greater control and overview of smaller components in the project. The project manager will be overseeing and reporting on work package progress and stepping in to correct the problems, while the team manager will coordinate daily work and communicate between team members and the project manager.
+
+- Managing product delivery
+Communication between team manager and project manager. This includes 3 activities: Accepting, executing, and delivering a work package.
+
+- Managing stage boundaries
+First, the board decided whether to continue the project. Then, meetings between project manager and the team will record lessons learned for the next stage. Following this, the business case will be updated to reflect the current status and findings. And finally, report the stage end or produce an exception plan.
+
+- Closing a project
+First, decommission the project. Then, identify follow-up actions which may need to be taken. Prepare benefits and project evaluation reviews, free up leftover resources and hand over the products to the customer.
+
+
+Roles and responsibilities: 
+- Project board
+- Senior user
+At least one person who represents the final users’ requirements in the board.
+- Senior supplier
+At least one person who represents the interests of the suppliers
+- Executive
+A business-oriented person who is responsible for the project.
+- Project assurance
+Assures the interests of the stakeholders.
+- Change Authority
+Helps deciding on some of the changes on behalf of the Project board.
+- Project manager
+Responsible for day-to-day management on behalf of the project board.
+- Project support
+Supports the project manager with project management activities.
+- Team manager
+At least one person who’s responsible for ensuring variables such as quality of the production in the teams.
+
+
+Sustainability:
+There are many ways of making IT increasingly green. Things like power management, which lowers resources spent. This can be done by automating components, like powering off all computers after work hours.
+You can also start using cloud computing, which would reduce a business’ direct energy consumption.
+Remote work is a global and extremely important work method which would decrease all types of energy consumption.
+
+Questions:
+1 Hvad er PRINCE2´s definitionen på et projekt?
+”A project is a temporary organization that is created for the purpose of delivering one or more business products according to an agreed Business Case”
+2 Hvad karakteriserer et projekt i forhold til daglig drift?
+Change:  Projects are the means by which we introduce change
+
+Temporary:  As the definition above states, projects are temporary in nature. Once the desired change has been implemented, business as usual resumes (in its new form) and the need for the project is removed. Projects should have a defined start and a defined end
+
+Cross-functional: Projects involve a team of people with different skills working together (on a temporary basis) to introduce a change that will impact others outside the team. Projects often cross the normal functional divisions within an organization and sometimes span entirely different organizations. This frequently causes stresses and strains both within organizations and between, for example, customers and suppliers. Each has a different perspective and motivation for getting involved in the change
+3 Overvej hvorfor det er centralt for PRINCE2, at projekter laves af en midlertidig projektorganisation som udnævnes til projektet, i stedet for blot at lade ”line management” (linjeledelsen) lave projekterne
+Effective communication and defined user roles and responsibilities allows for a much smoother process.
+4 Hvilke 6 præstationsmål(Performance Targets) har PRINCE2 fokus på?
+Costs, Timescale, Quality, Scope, Risk, and Benefits.
+5 Figur 11.2 PRINCE2 manualen er en oversigt over PRINCE2´s procesmodel. Indsæt et screendump af den her.
+ 
+6 Find ”Project Mandate”(projektkommissoriet) på PRINCE2´s procesmodel på figur 11.2
+ 
+7 Lav en kort sammenfatning over formålet med projektkommissoriet(Project Mandate) (1- 2 sætninger)
+Making sure all information is determined. Why, what, and how much. 
+8 Hvilke oplysninger bør findes i projektkommissoriet(Project Mandate)?
+Reasons for the idea. Expected quality and cost benefits.
+
+9 Skal projektets forventede udbytte(Benefits) altid kvantificeres?
+Yes.
+10 Skal projektets udbytter(Benefits) altid udtrykkes som økonomiske fordele?
+No, can also include other benefits
+11 Hvem er operationelt ansvarlig for at det udbytte(Benefit) der står i Business Casen også bliver realiseret?
+Senior user
+12 Hvornår udarbejdes Plan for Udbyttereview(Benefits Review Plan)?
+During the Initiation a Project process
+13 Lav en kort beskrivelse af formålet med at have en projektorganisation (1-5 linjer)
+The purpose of the Organization theme is to define and establish the project’s structure of accountability and responsibilities (the who?)
+14 Er en projectorganisation midlertidig eller fast?
+Temporary
+15 Hvor mange niveauer indgår i en PRINCE2 projektorganisation? Hvilke?
+4; Corporate or programme management, Directing, Managing, and Delivering.
+16 Hvilke tre interesser indgår i et projekt, og hvilken rolle har fokus på at varetage forretningens interesse?
+Business: Executive role
+User: Stakeholder
+Supplier: The supplier
+17 Hvilken rolle kan det være vanskeligt at fastsætte før projektfremgangsmåden er fastlagt?
+Senior supplier
+
+18 Hvor mange personer er der mindst involveret i et PRINCE2 projekt?
+Technically only one, as multiple roles may be assigned to the same person. However it isn’t recommended and some roles don’t make sense that one person has both.
+19 Forestil dig, at du arbejder i en kommune, der skal have nye PC’ere på deres skoler. Du er blevet bedt om at være projektleder, og møder for første gang Styregruppen(Project Board), som omfatter 23 personer. Hvad vil du anbefale Styregruppen(Project Board)?
+Delegate some project assurance tasks to separate individuals.
+20 Hvad bruges Kvalitetsregisteret(Quality Register) til under Planlægningen af den næste fase?
+Ensures the expected quality of the product is met.
+21 I hvilken proces udarbejdes projektets Slutproduktbeskrivelse(Project Product Description)?
+Starting up a project
+22 Hvornår udarbejdes Produktbeskrivelserne(Product Descriptions)?
+After the product title
+23 Hvor er Kvalitetstolerancerne(Quality Tolerance) beskrevet, i hvilken sammenhæng?
+Product description, acceptable range of values such as if something is maintained in 1 to 5 degrees Celsius.
+24 Hvor er Kvalitetskriterierne(Quality Criteria) beskrevet, i hvilken sammenhæng?
+Product description, quality specifications that the product must meet.
+25 Hvad anvender man Slutproduktbeskrivelsen(Project Product Description) til?
+Ensuring quality criteria, expected end results and more helps identifying and keeping the product on track.
+26 Kan man ændre i Slutproduktbeskrivelsen(Project Product Description), efter Start af et Projekt(Starting a Project) processen og i givet fald, hvem kan godkende ændringer?
+Only if changes are made during the project, project board approves.
+27 Hvorfor skal projektfremgangsmåden(Project Approach) bestemmes allerede i Start af et Projekt(Starting up a Project)? Kan man ikke vente med at definere fremgangsmåden, når man laver Projektplanen(Project plan) i Initiering af et Projekt(Initiating a Project) processen?
+You must have identified an approach before you can make a plan. 
+28 Hvor er detaljerne omkring datoer, omkostninger og milepæle beskrevet?
+A work package
+29 Hvorfor er det vigtigt at have taget stilling til Risikostyringsstrategien(Risk Management Strategy) for et projekt?
+If you don’t plan for risks, your estimates for the project will collapse. If I think everything will go smoothly and tell the stakeholder it will take 1 year to finish, I’ll be in deep water when something goes wrong. Planning for risks and allocating time and money is necessary to ensure that even if something unforeseen happens, you will still have the resources (and time) to deal with it.
+30 Hvad har man i virkeligheden besluttet, hvis man ikke vil anvende ressourcer til risikostyring(Risk Management)?
+To not learn from past projects.
+31 Hvad skal Teamlederen(Team Manager) gøre så snart han/hun bliver bekendt med at de planlagte produkter(Work Package) ikke kan afleveres inden for tolerancerne(Tolerances)?
+Report back to the project manager
+32 Hvor er detaljerne omkring disse tolerancer(Tolerances) beskrevet?
+The work package
+
+33 Hvad skal Teamlederen(Team Manager) gøre så snart han/hun bliver bekendt med at de planlagte produkter(Work Package) ikke kan leveres i henhold til forventningerne(Expectations)?
+Advise the project manager with deviations from the plan, recommend corrective action and help prepare any appropriate exception plans.
+34 Hvad er PRINCE2 termen for disse forventninger(Expectations) og hvor er de beskrevet?
+In the product description, tolerances and quality.
+35 Hvad er de 4 karakteristika (characteristics) som alle medlemmer af Styregruppen(Project Board) bør besidde?
+Authority, Credibility, Ability to delegate, and availability.
+36 Vi hører ofte fra organisationer, at det hos dem er det projektlederen(Project Manager) der har det overordnede ansvar for projektet. Kan dette være en god idé, eller er det uhensigtsmæssigt? Begrund dit svar.
+No, as the project manager has to already made make many decisions, freeing up at much time as possible for those decisions and be crucial to the quality of the product.
+37 Hvilke 3 registre oprettes i initieringsfasen(Initiation a Project)?
+Business Case Register, Project Initialization register, and risk register.
+38 Hvilket budget er tæt forbundet med konfigurationsstyring(Configuration Management)? Begrund dit svar.
+(Tjek kapitel 9)
+39 Hvilket ledelsesprodukt(Management Product) anvendes til at registrere gennemførte kvalitetsaktiviteter(Quality Activities)?
+Quality register
+40 Hvornår registreres planlagte kvalitetssikringsaktiviteter(Quality Assurance Activities)?
+Controlling a stage
+41 Hvornår begynder Styregruppens(Project Board) arbejde i projektet: Før eller efter beslutningen om at godkende initiering? Begrund dit svar.
+Before, as they need to ensure that resources and benefits can be expected
+42 Hvornår kan Styregruppen(Project Board) afslutte et projekt?
+When all project goals have been met, or the project lacks benefits.
+43 Giv nogle begrundelse for, hvorfor en Styregruppe(Project Board) kan vælge at afslutte et projekt før tid.
+Lacks of benefits. Project has no value anymore. Stakeholders aren’t interested.
+44 Hvad skal der ske, når et PRINCE2 projekt afsluttes, uanset om det afsluttes i utide eller i henhold til planen?
+Prepare planned closure, prepare premature closing, hand over products, evaluate the project, recommend project closure.
+45 På et møde i den virksomhed, som du arbejder i, diskuterer I at implementere PRINCE2 i afdelingen, men flere udtrykker bekymring over, at man får et stort og besværligt projektbureaukrati. Derfor bliver det besluttet at indføre en ”PRINCE light” version. Hvad er din kommentar til dette?
+This is alright, as PRINCE2 is specifically created to support all projects.
+46 Hvor i projektets dokumentation beskriver man, hvorledes PRINCE2 er tilpasset det pågældende projekt?
+Project initiation documentation
