@@ -1,0 +1,39 @@
+Principles:
+
+- Continued Business Justification
+
+A PRINCE2 project must have a justifiable reason to start it.
+
+A PRINCE2 project should keep its justification throughout the entire lifespan of the project. Although the justification may change, it's important to continue analyzing the benefits of working on the project.
+
+A PRINCE2 project's justification should always be documented and approved by associates.
+
+- Learn from experience
+
+When starting a project, reviewing previous or similar projects can teach lessons which result in great benefit.
+
+During the project, continue using what's been learned to the project's future. You might have run into a problem early on, which surfaced information that could be used in the future.
+
+As the project closes, document and continue using lessons learned. If every project is used as a lesson, every future project will improve.
+
+- Defined roles and responsabilities
+
+The organization responsible for the project must have defined and agreed roles and responsibilities within the organization.
+The structure should reflect a healthy environment that aligns the business, user, and supplier stakeholder's interests.
+
+- Manage by stages
+
+If senior management have control points at major intervals throughout the project, the project's status should be assessed at all stages of the project, resulting in the project remaining viable and helps aid in decision making regarding proceeding of project.
+
+Breaking the project into stages allows senior management to assess priority, risk and complexity regularly, helping with mapping the project and steering its course in the right direction.
+
+- Manage by exception
+
+Senior management don't have much time on their hands. 
+Therefore, establishing baseline requirements for time, cost, quality, risk, scope, and benefit, senior management's time won't be wasted on daily activities, which can be delegated to the project manager.
+
+- Focus on products
+
+By defining each product's prupose, composition, derivation, format, quality criteria and quality method, the project's product will be defined and will provide the means to determine effort estimates, resource requirements, depedencies and activity schedules.
+
+This results in a much smoother assessment of risk and handling
