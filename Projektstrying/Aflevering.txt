@@ -181,11 +181,11 @@ Only if changes are made during the project, project board approves.
 27 Hvorfor skal projektfremgangsmåden(Project Approach) bestemmes allerede i Start af et Projekt(Starting up a Project)? Kan man ikke vente med at definere fremgangsmåden, når man laver Projektplanen(Project plan) i Initiering af et Projekt(Initiating a Project) processen?
 You must have identified an approach before you can make a plan. 
 28 Hvor er detaljerne omkring datoer, omkostninger og milepæle beskrevet?
-A work package
+Project mandate
 29 Hvorfor er det vigtigt at have taget stilling til Risikostyringsstrategien(Risk Management Strategy) for et projekt?
 If you don’t plan for risks, your estimates for the project will collapse. If I think everything will go smoothly and tell the stakeholder it will take 1 year to finish, I’ll be in deep water when something goes wrong. Planning for risks and allocating time and money is necessary to ensure that even if something unforeseen happens, you will still have the resources (and time) to deal with it.
 30 Hvad har man i virkeligheden besluttet, hvis man ikke vil anvende ressourcer til risikostyring(Risk Management)?
-To not learn from past projects.
+Well, a lot fo stuff. Including not wanting to learn from past mistakes, and accepting that your time and cost may increase dramatically.
 31 Hvad skal Teamlederen(Team Manager) gøre så snart han/hun bliver bekendt med at de planlagte produkter(Work Package) ikke kan afleveres inden for tolerancerne(Tolerances)?
 Report back to the project manager
 32 Hvor er detaljerne omkring disse tolerancer(Tolerances) beskrevet?
@@ -202,7 +202,7 @@ No, as the project manager has to already made make many decisions, freeing up a
 37 Hvilke 3 registre oprettes i initieringsfasen(Initiation a Project)?
 Business Case Register, Project Initialization register, and risk register.
 38 Hvilket budget er tæt forbundet med konfigurationsstyring(Configuration Management)? Begrund dit svar.
-(Tjek kapitel 9)
+Project changes result in configuration management having to also make changes and plan accordingly
 39 Hvilket ledelsesprodukt(Management Product) anvendes til at registrere gennemførte kvalitetsaktiviteter(Quality Activities)?
 Quality register
 40 Hvornår registreres planlagte kvalitetssikringsaktiviteter(Quality Assurance Activities)?
