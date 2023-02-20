@@ -32,11 +32,8 @@ const List<String> codes = <String>[
 ];
 
 class _ColourPageState extends State<ColourPage> {
-  String? alpha = "FF";
-  String? red = "FF";
-  String? green = "FF";
-  String? blue = "FF";
   Color? chosenColour = Color(0xFFFFFFFF);
+  List<String?> argb = <String?>["FF", "FF", "FF", "FF"];
 
   @override
   Widget build(BuildContext context) {
@@ -61,67 +58,9 @@ class _ColourPageState extends State<ColourPage> {
                   height: 60,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Text("Alpha:"),
-                    DropdownButton<String>(
-                        value: alpha,
-                        items:
-                            codes.map<DropdownMenuItem<String>>((String value) {
-                          return DropdownMenuItem<String>(
-                              value: value, child: Text(value));
-                        }).toList(),
-                        onChanged: (String? value) {
-                          setState(() {
-                            alpha = value;
-                            chosenColour = hexToColor(alpha, red, green, blue);
-                          });
-                        }),
-                    Text("Red:"),
-                    DropdownButton<String>(
-                        value: red,
-                        items:
-                            codes.map<DropdownMenuItem<String>>((String value) {
-                          return DropdownMenuItem<String>(
-                              value: value, child: Text(value));
-                        }).toList(),
-                        onChanged: (String? value) {
-                          setState(() {
-                            red = value;
-                            chosenColour = hexToColor(alpha, red, green, blue);
-                          });
-                        }),
-                    Text("Green:"),
-                    DropdownButton<String>(
-                        value: green,
-                        items:
-                            codes.map<DropdownMenuItem<String>>((String value) {
-                          return DropdownMenuItem<String>(
-                              value: value, child: Text(value));
-                        }).toList(),
-                        onChanged: (String? value) {
-                          setState(() {
-                            green = value;
-                            chosenColour = hexToColor(alpha, red, green, blue);
-                          });
-                        }),
-                    Text("Blue:"),
-                    DropdownButton<String>(
-                        value: blue,
-                        items:
-                            codes.map<DropdownMenuItem<String>>((String value) {
-                          return DropdownMenuItem<String>(
-                              value: value, child: Text(value));
-                        }).toList(),
-                        onChanged: (String? value) {
-                          setState(() {
-                            blue = value;
-                            chosenColour = hexToColor(alpha, red, green, blue);
-                          });
-                        })
-                  ],
-                ),
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: hexDropDowns()),
                 Column(
                   children: [
                     ElevatedButton(
@@ -133,6 +72,29 @@ class _ColourPageState extends State<ColourPage> {
                 )
               ],
             )));
+  }
+
+  @override
+  List<Widget> hexDropDowns() {
+    List<String?> choices = <String?>["Alpha", "Red", "Green", "Blue"];
+    List<Widget> widgets = <Widget>[];
+
+    for (int i = 0; i < choices.length; i++) {
+      widgets.add(Text("${choices[i]}:"));
+      widgets.add(DropdownButton<String>(
+          value: argb[i],
+          items: codes.map<DropdownMenuItem<String>>((String value) {
+            return DropdownMenuItem<String>(value: value, child: Text(value));
+          }).toList(),
+          onChanged: (String? value) {
+            setState(() {
+              argb[i] = value;
+              chosenColour = hexToColor(argb[0], argb[1], argb[2], argb[3]);
+            });
+          }));
+    }
+
+    return widgets;
   }
 
   @override
