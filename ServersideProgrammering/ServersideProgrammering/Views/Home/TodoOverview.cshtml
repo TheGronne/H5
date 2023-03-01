@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ServersideProgrammering.Models.Todo>?
+@{
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin.cshtml";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Overview</p>
+
+<table class="table table-bordered table-striped" style="width_100%">
+    <thead>
+        <tr>
+            <th>
+                Todo Name
+            </th>
+            <th>
+                Todo Description
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null) {
+            @foreach(var obj in Model){
+            <tr>
+                <td width="50%">
+                    @obj.Name
+                </td>
+                <td width="50%">
+                    @obj.Description
+                </td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>
