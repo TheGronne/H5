@@ -2320,6 +2320,15 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
+      "System.Interactive/6.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/net6.0/System.Interactive.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Interactive.dll": {}
+        }
+      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7318,6 +7327,30 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "System.Interactive/6.0.1": {
+      "sha512": "q2E+Rkj35aGIPdZFKoBfI46LU1hGLHrhg9diif3psaRFeiMwSYom0VI0XHIQFYtGHzq2g1+3awHvK+7YntfNIQ==",
+      "type": "package",
+      "path": "system.interactive/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "lib/net48/System.Interactive.dll",
+        "lib/net48/System.Interactive.xml",
+        "lib/net6.0/System.Interactive.dll",
+        "lib/net6.0/System.Interactive.xml",
+        "lib/netstandard2.0/System.Interactive.dll",
+        "lib/netstandard2.0/System.Interactive.xml",
+        "ref/net4.8/System.Interactive.dll",
+        "ref/net4.8/System.Interactive.xml",
+        "ref/net6.0/System.Interactive.dll",
+        "ref/net6.0/System.Interactive.xml",
+        "ref/netstandard2.1/System.Interactive.dll",
+        "ref/netstandard2.1/System.Interactive.xml",
+        "system.interactive.6.0.1.nupkg.sha512",
+        "system.interactive.nuspec"
+      ]
+    },
     "System.IO/4.3.0": {
       "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "type": "package",
@@ -10297,7 +10330,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.14",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.14.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.12",
-      "Swashbuckle.AspNetCore >= 6.3.0"
+      "Swashbuckle.AspNetCore >= 6.3.0",
+      "System.Interactive >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -10382,6 +10416,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.3.0, )"
+          },
+          "System.Interactive": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           }
         },
         "imports": [

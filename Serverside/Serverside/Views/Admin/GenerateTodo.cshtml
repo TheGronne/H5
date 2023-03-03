@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin.cshtml";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h2>Generate Todos</h2>
+@using (Html.BeginForm("PostTodos", "Admin", FormMethod.Post))
+{
+    <label for="Name">Name:</label><br>
+    <input type="text" id="Name" name="Name"><br>
+    <label for="Description">Description:</label><br>
+    <input type="text" id="Description" name="Description">
+    <input type="submit" value="Submit">
+}
