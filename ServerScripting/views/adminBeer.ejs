@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+
+    <h1>Admin page</h1>
+    <h4>Create/edit beer:</h4>
+    <form method="post" action="/admin/<%= locals.editing ? 'beer/edit/' + chosen._id : 'beer'%>" enctype="multipart/form-data">
+        Name:
+        <input type="text" name="name" value="<%= locals.chosen ? chosen.name : '' %>"><br>
+        Type:
+        <select name="type">
+            <% if (locals.types) { %>
+                <% for(let i = 0; i < types.length; i++) { %>
+                <option <%= locals.chosen && chosen.type == types[i].name ? 'selected' : '' %> value="<%= types[i].name %>"><%= types[i].name %></option>
+                <% } %>
+            <% } else { %>
+                <option <%= locals.chosen && chosen.type == 'Big' ? 'selected' : '' %>>Big</option>
+                <option <%= locals.chosen && chosen.type == 'Small' ? 'selected' : '' %>>Small</option>
+                <option <%= locals.chosen && chosen.type == 'Thick' ? 'selected' : '' %>>Thick</option>
+                <option <%= locals.chosen && chosen.type == 'Thin' ? 'selected' : '' %>>Thin</option>
+                <option <%= locals.chosen && chosen.type == 'Ugly' ? 'selected' : '' %>>Ugly</option>
+                <option <%= locals.chosen && chosen.type == 'Pretty' ? 'selected' : '' %>>Pretty</option>
+            <% } %>
+        </select><br>
+        Color:
+        <input type="text" name="color" value="<%= locals.chosen ? chosen.color : '' %>"><br>
+        Image:
+        <input type="file" name="image"><br>
+        <% if(locals.chosen && chosen.image != null){ console.log(chosen) %>
+            <img src="/images/<%= chosen.image %>" style="width:100px;height:100px;">
+        <% } %>
+        Year:
+        <select name="year">
+            <% for(let i = new Date().getFullYear(); i >= 1923; i--) { %>
+            <option <%= locals.chosen && chosen.year == i ? 'selected' : '' %> value="<%= i %>"><%= i %></option>
+            <% } %>
+        </select><br>
+        Strength:
+        <input type="number", name="strength" value="<%= locals.chosen ? chosen.strength : '' %>">
+
+        <button type="submit">Save</button>
+    </form>
+    <% if(locals.message) { %>
+        <h5><%= locals.message %></h5>
+    <% } %>
+    <br>
+    <h4>List of beers:</h4>
+    <% if(locals.beers) { %>
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% beers.forEach(beer => { %>
+                <tr>
+                    <td>
+                        <a href="/admin/beer/edit/<%= beer._id %>">Edit</a>
+                        <a onclick="return confirm('Are you sure you want to delete this?')"
+                            href="/admin/beer/delete/<%= beer._id %>">Delete</a>
+                    </td>
+                    <td><%=beer._id %></td>
+                    <td><%=beer.name %></td>
+                    <td><%=beer.color %></td>
+                    <td><%=beer.type %></td>
+                </tr>
+                <% }) %>
+        </tbody>
+    </table>
+    <% } %>
+</body>
+</html>

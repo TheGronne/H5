@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+    <% if(locals.beer) { %>
+        <img src="/images/<%= beer.name %>.jpg">
+        <h2>Name: <%= beer.name %></h2>
+        <h2>Color: <%= beer.color %></h2>
+        <h2>Strength: <%= beer.strength %></h2>
+        <h2>Type: <%= beer.type %></h2>
+        <h2>Year: <%= beer.year %></h2>
+    <% } %>
+</body>
+</html>
