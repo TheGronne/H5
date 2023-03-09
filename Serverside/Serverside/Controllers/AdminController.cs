@@ -80,7 +80,7 @@ namespace Serverside.Controllers
 
             todo.Name = _protector.Protect(todo.Name);
             todo.Description = _protector.Protect(todo.Description);
-            //todo.Description = BCrypt.Net.BCrypt.HashPassword(todo.Description);
+
             _db.Todos.Add(todo);
             _db.SaveChanges();
 

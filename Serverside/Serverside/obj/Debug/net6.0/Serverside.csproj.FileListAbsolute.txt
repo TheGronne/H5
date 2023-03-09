@@ -279,3 +279,4 @@ C:\Users\kaspe\Desktop\H5\Serverside\Serverside\bin\Debug\net6.0\Swashbuckle.Asp
 C:\Users\kaspe\Desktop\H5\Serverside\Serverside\obj\Debug\net6.0\scopedcss\Views\Shared\Admin\_LayoutAdmin.cshtml.rz.scp.css
 C:\Users\kaspe\Desktop\H5\Serverside\Serverside\bin\Debug\net6.0\BCrypt.Net-Next.dll
 C:\Users\kaspe\Desktop\H5\Serverside\Serverside\bin\Debug\net6.0\System.Interactive.dll
+C:\Users\kaspe\Desktop\H5\Serverside\Serverside\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
